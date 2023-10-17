@@ -1,6 +1,7 @@
 import Navbar from "./scense/Navbar"
 import {useState, useEffect} from "react"
 import { Selectedpage } from "./shared/type"
+import Home from "./scense/Home"
 
 
 
@@ -19,8 +20,6 @@ function App() {
   }
   window.addEventListener("scroll", handleScroll)
   return () => window.removeEventListener("scroll", handleScroll)  
-  
-  
   }, [])
   
 
@@ -28,7 +27,10 @@ function App() {
 
   return (
     <div className='app bg-gray-50'>
-      <Navbar selectedpage={selectedpage} setSelectedPage={setSelectedPage} />
+      <Navbar
+      isTopPage = {isTopPage}
+      selectedpage={selectedpage} setSelectedPage={setSelectedPage} />
+      <Home  setSelectedPage={setSelectedPage} />
     </div>
   )
 }

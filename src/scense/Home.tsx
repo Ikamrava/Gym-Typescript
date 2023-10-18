@@ -16,7 +16,7 @@ type Props = {
 function Home({setSelectedPage}: Props) {
     const isAboveMediumScreens = matchMedia("(min-width:1060px)").matches;
   return (
-    <section id="#home" className=" gap-16 bg-gray-20 md:py-52  md:h-full md:pb-0">
+    <section id="#home" className=" gap-16 bg-gray-20 md:py-32  md:h-full md:pb-0">
         {/* IMAGE AND MAIN HEADER */}
         <div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6  ">
             <div className="z-10 mt-32 md:basis-3/5">
@@ -28,19 +28,20 @@ function Home({setSelectedPage}: Props) {
                             <img src={HomePageText} alt="home-page-text" />
                         </div>
                     </div>
-                    <p>
+                    <p className=" mt-8 text-sm">
+                    
                         Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
                         Studios to get the Body Shapes That you Dream of.. Get Your Dream
                         Body Now.
                         
                     </p>
                 </div>
-                <div>
+                <div className="mt-10 flex items-center gap-8 mb-6 ">
                     <ActionButton setSelectedPage={setSelectedPage} >
                         Join Now 
                     </ActionButton>
                     <AnchorLink  className=" text-sm font-bold text-primary-500
-                    underline hover:text-secondary-500"
+                    underline hover:text-secondary-500 "
                     onClick={() => setSelectedPage(Selectedpage.ContactUs)}
                     href={`#${Selectedpage.ContactUs}`}>
                         <p>Learn More</p>

@@ -2,6 +2,7 @@ import Navbar from "./scense/Navbar"
 import {useState, useEffect} from "react"
 import { Selectedpage } from "./shared/type"
 import Home from "./scense/Home"
+import Benefits from "./scense/Benefits"
 
 
 
@@ -31,6 +32,7 @@ function App() {
       isTopPage = {isTopPage}
       selectedpage={selectedpage} setSelectedPage={setSelectedPage} />
       <Home  setSelectedPage={setSelectedPage} />
+      <Benefits  setSelectedPage={setSelectedPage} />
     </div>
   )
 }

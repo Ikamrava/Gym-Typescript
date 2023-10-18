@@ -61,7 +61,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>MORE THAN JUST GYM.</HText>
-          <p className="my-5 text-sm">
+          <p className="my-5 text-sm font-bold">
             We provide world class fitness equipment, trainers and classes to
             get you to your ultimate fitness goals with ease. We provide true
             care into each and every member.
@@ -130,7 +130,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0 },
               }}
             >
-              <p className="my-5">
+              <p className="my-5 font-bold">
                 Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
                 egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
                 fames vitae vitae quis. Quis amet vulputate tincidunt at in
@@ -138,7 +138,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
                 Felis orci diam odio.
               </p>
-              <p className="mb-5">
+              <p className="mb-5 font-bold">
                 Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
                 tellus quam porttitor. Mauris velit euismod elementum arcu neque
                 facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit

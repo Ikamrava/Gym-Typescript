@@ -4,6 +4,8 @@ import { Selectedpage } from "./shared/type"
 import Home from "./scense/Home"
 import Benefits from "./scense/Benefits"
 import OurClasses from "./scense/ourClasses"
+import ContactUs from "./scense/contactUs"
+import Footer from "./scense/footer"
 
 
 
@@ -35,6 +37,8 @@ function App() {
       <Home  setSelectedPage={setSelectedPage} />
       <Benefits  setSelectedPage={setSelectedPage} />
       <OurClasses  setSelectedPage={setSelectedPage} />
+      <ContactUs  setSelectedPage={setSelectedPage} />
+      <Footer  />
     </div>
   )
 }
